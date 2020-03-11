@@ -5,6 +5,7 @@ const navigation = document.querySelector('header');
 btn.addEventListener('click', function () {
   // console.log('body');
   navigation.classList.toggle('active');
+  btn.classList.toggle('active');
 })
 
 // console.log('test');

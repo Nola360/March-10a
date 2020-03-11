@@ -136,12 +136,14 @@ header {
   display: block;
   text-align: center;
   padding: 20px;
+   transition: all .6s ease-in-out;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items:center;
+   transition: all .6s ease-in-out;
   
 }
 
@@ -157,6 +159,7 @@ header {
   font-size: 15px;
   font-family: 'Montserrat';
 text-align: center;
+ transition: all .6s ease-in-out;
 }
 
 .btn {
@@ -166,6 +169,7 @@ text-align: center;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+   transition: all .6s ease-in-out;
 }
 
 }
@@ -182,7 +186,7 @@ text-align: center;
   padding: 30px 5% 30px 5%;
   border-bottom: 2.2px solid silver;
   border-image: linear-gradient(to right, transparent,  silver, transparent) 1;
-  transition: .6s ease-in-out;
+   transition: all .6s ease-in-out;
 }
 .logo {
   text-align: center;
@@ -221,6 +225,10 @@ text-align: center;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+.btn.active {
   width: 355px;
 }
   
