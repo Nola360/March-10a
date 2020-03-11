@@ -17,19 +17,30 @@ li, a, button {
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
+   transition: all .6s ease-in-out;
 }
 
 header {
+  position: relative;
+  top: -100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5% 0 5%;
+  padding: 30px 5% 30px 5%;
+  border-bottom: 2.2px solid silver;
+  border-image: linear-gradient(to right, transparent,  silver, transparent) 1;
+  transition: all .6s ease-in-out;
+}
+
+header.active {
+  top: 0px;
+
 }
 
 .logo {
   font-family: 'varela','montserrat', 'Open Sans';
   font-size: 20px;
-  color: #eee; 
+  color: rgb(9, 255, 0); 
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -43,6 +54,9 @@ header {
 
 .nav__links {
   list-style: none;
+   transition: all .8s ease-in-out;
+  
+  
 }
 
 .nav__links li {
@@ -58,6 +72,27 @@ header {
   color: #0088a9;
 }
 
+.container {
+  display: flex;
+   transition: all .6s ease-in-out;
+  
+}
+
+#signup {
+  width: 220px;
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+  outline: none;
+  padding: 16px;
+  color: #eee;
+  border: 1px solid #eee;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  transition: all .6s ease-in-out;
+  
+}
+
 button {
   padding: 9px 25px;
   background: rgba(0,136,169,1);
@@ -70,4 +105,122 @@ button {
 
 button:hover {
   background: rgba(0,136,169,0.8);
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+header {
+  display: block;
+  position: relative;
+  top: -420px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 30px 5% 30px 5%;
+  border-bottom: 2.2px solid silver;
+  border-image: linear-gradient(to right, transparent,  silver, transparent) 1;
+  transition: .6s ease-in-out;
+}
+.logo {
+  text-align: center;
+}
+.nav__links li {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+#signup {
+  /* width: 220px; */
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+  outline: none;
+  padding: 16px;
+  color: #eee;
+  border: 1px solid #eee;
+  font-size: 15px;
+  font-family: 'Montserrat';
+text-align: center;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+}
+
+@media only screen and (max-width: 1122px) {
+  
+  header {
+  display: block;
+  /* position: relative; */
+  top: -420px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 30px 5% 30px 5%;
+  border-bottom: 2.2px solid silver;
+  border-image: linear-gradient(to right, transparent,  silver, transparent) 1;
+  transition: .6s ease-in-out;
+}
+.logo {
+  text-align: center;
+}
+.nav__links li {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+#signup {
+  /* width: 220px; */
+  height: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+  outline: none;
+  padding: 16px;
+  color: #eee;
+  border: 1px solid #eee;
+  font-size: 15px;
+  font-family: 'Montserrat';
+text-align: center;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
 }
